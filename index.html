@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="calculator.js"></script>
+</head>
+
+
+<body>
+    <section class="inputSection">
+        <h2>Input Equation:</h2>
+        <p>Input:</p>
+        <button id="input1Button" onclick="setInput('input1')">Input 1</button><br>
+        <button id="input2Button" onclick="setInput('input2')">Input 2</button><br>
+        <h2>Select Operation</h2>
+        <select id="operationChoice" required onchange="onSelect(value)">
+            <option value="placeholder"> </option>
+            <option value="addition">+</option>
+            <option value="subtraction">-</option>
+            <option value="multiplication">*</option>
+            <option value="division">/</option>
+        </select>
+        <br>
+        <button id="calculateButton" onclick="calculate()">Calculate</button>
+    </section>
+</body>
+
+</html>
