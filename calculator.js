@@ -6,10 +6,10 @@ let equation = "";
 function setInput(input) {
     if (input === 'input1') {
         input1 = Number(window.prompt("Set input value:", ""));
-        document.getElementById("input1Box").innerHTML = "Input 1:"+input1;
+        document.getElementById("input1Box").innerHTML = "Input 1:" + input1;
     } else {
         input2 = Number(window.prompt("Set input value:", ""));
-        document.getElementById("input2Box").innerHTML = "Input 2:"+input2;
+        document.getElementById("input2Box").innerHTML = "Input 2:" + input2;
     }
 }
 
@@ -87,4 +87,4 @@ function calculate() {
     } else if (operator === "placeholder") {
         alert("That's not a valid operation!");
     }
-}
+}//copyright Owen Gaffney 2024 All Rights Reserved
