@@ -11,11 +11,11 @@
 
 
 <body>
-    <section id="inputSection" class="inputSection">
+    <section id="inputSection" class="inputSection" onload="easterEgg(10, 1)">
         <h2>Basic Calculator</h2>
         <h2>Input:</h2>
         <button id="input1Button" onclick="setInput('input1'), inputButtonClicked('input1Button')">Input 1</button><br>
-        <button id="input2Button" onclick="setInput('input2'), inputButtonClicked('input2Button')">Input 2</button><br>
+        <button id="input2Button" onclick="setInput('input2'), easterEgg(150, 10), inputButtonClicked('input2Button')">Input 2</button><br>
         <p id="input1Box">Input 1:</p>
         <p id="input2Box">Input 2:</p>
         <h2>Select Operation</h2>

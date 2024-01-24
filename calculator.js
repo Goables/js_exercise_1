@@ -74,7 +74,7 @@ function calculate() {
             </select>
             <br>
             <button id="calculateButton" onclick="calculate()">Calculate</button>
-            <p>Equation: `+ equation + `</p>
+            <p>Equation: ${equation} </p>
         </section>
         </body>`);
         document.close();
@@ -87,4 +87,14 @@ function calculate() {
     } else if (operator === "placeholder") {
         alert("That's not a valid operation!");
     }
-}//copyright Owen Gaffney 2024 All Rights Reserved
+}
+
+function easterEgg(min, max) {
+    let chance = (Math.random() * (max - min) + min);
+    if (chance === 48) {
+        document.getElementById("inputSection").style.backgroundColor = "hotpink"
+    }
+    return console.log(chance);
+}
+
+//copyright Owen Gaffney 2024 All Rights Reserved
