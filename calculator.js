@@ -5,9 +5,11 @@ let equation = "";
 
 function setInput(input) {
     if (input === 'input1') {
-        input1 = Number(window.prompt("Set input value:", ""));;
+        input1 = Number(window.prompt("Set input value:", ""));
+        document.getElementById("input1Box").innerHTML = "Input 1:"+input1;
     } else {
-        input2 = Number(window.prompt("Set input value:", ""));;
+        input2 = Number(window.prompt("Set input value:", ""));
+        document.getElementById("input2Box").innerHTML = "Input 2:"+input2;
     }
 }
 
@@ -47,14 +49,17 @@ function calculate() {
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Calculator</title>
+            <link rel="stylesheet" href="stylesheet.css">
         </head>
 
         <body>
         <section class="inputSection">
-            <h2>Input Equation:</h2>
-            <p>Input:</p>
+            <h2>Basic Calculator</h2>
+            <h2>Input:</h2>
             <button id="input1Button" onclick="setInput('input1')">Input 1</button><br>
             <button id="input2Button" onclick="setInput('input2')">Input 2</button><br>
+            <p id="input1Box">Input 1:</p>
+            <p id="input2Box">Input 2:</p>
             <h2>Select Operation</h2>
             <select id="operationChoice" required onchange="onSelect(value)">
                 <option value="placeholder"> </option>
@@ -69,6 +74,9 @@ function calculate() {
         </section>
         </body>`);
         document.close();
+        input1 = null;
+        input2 = null;
+        operator = "placeholder";
     } else if (isNaN(input1) || isNaN(input2)) {
         alert("Please check your inputs!  One or more is not a valid value!");
     } else if (operator === "placeholder") {
