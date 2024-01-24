@@ -1,5 +1,5 @@
-let input1 = null;
-let input2 = null;
+let input1;
+let input2;
 let operator = "placeholder"
 let equation = "";
 
@@ -74,9 +74,10 @@ function calculate() {
         </section>
         </body>`);
         document.close();
-        input1 = null;
-        input2 = null;
+        input1 = undefined;
+        input2 = undefined;
         operator = "placeholder";
+        equation = "";
     } else if (isNaN(input1) || isNaN(input2)) {
         alert("Please check your inputs!  One or more is not a valid value!");
     } else if (operator === "placeholder") {

@@ -18,6 +18,10 @@ body {
     border-radius: 8px;
 }
 
+#operationChoice {
+    width: 12%;
+}
+
 h2 {
     font-size: xx-large;
 }
