@@ -26,7 +26,7 @@ h2 {
     font-size: xx-large;
 }
 
-#calculateButton {
+#calculateButton, #input1Button, #input2Button {
     width: 25%;
     height: 10%;
     display: inline-block;
@@ -41,8 +41,7 @@ h2 {
     box-shadow: 0 3px #999;
 }
 
-#calculateButton:active {
-    background-color: #eb5915;
+#calculateButton:active, #input1Button:active, #input2Button:active {
     box-shadow: 0 1px #666;
     transform: translateY(2px);
 }

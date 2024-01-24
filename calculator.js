@@ -17,6 +17,10 @@ function onSelect(operatorValue) {
     operator = operatorValue;
 }
 
+function inputButtonClicked(button) {
+    document.getElementById(button).style.backgroundColor = "#50cd1a";
+}
+
 function calculate() {
     if (!isNaN(input1) && !isNaN(input2) && operator !== "placeholder") {
         console.log("Input 1:" + input1);
@@ -56,8 +60,8 @@ function calculate() {
         <section class="inputSection">
             <h2>Basic Calculator</h2>
             <h2>Input:</h2>
-            <button id="input1Button" onclick="setInput('input1')">Input 1</button><br>
-            <button id="input2Button" onclick="setInput('input2')">Input 2</button><br>
+            <button id="input1Button" onclick="setInput('input1'), inputButtonClicked('input1Button')">Input 1</button><br>
+            <button id="input2Button" onclick="setInput('input2'), inputButtonClicked('input2Button')">Input 2</button><br>
             <p id="input1Box">Input 1:</p>
             <p id="input2Box">Input 2:</p>
             <h2>Select Operation</h2>
