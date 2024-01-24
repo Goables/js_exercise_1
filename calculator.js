@@ -90,8 +90,8 @@ function calculate() {
 }
 
 function easterEgg(min, max) {
-    let chance = (Math.random() * (max - min) + min);
-    if (chance === 48) {
+    let chance = Math.round(Math.random() * (max - min) + min);
+    if (chance === 4) {
         document.getElementById("inputSection").style.backgroundColor = "hotpink"
     }
     return console.log(chance);
